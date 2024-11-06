@@ -20,7 +20,7 @@ function RNA (){
       console.log("thanks for playing!");
     }
   }else{
-    console.log("Please look at your chart and type the first three letters of each amino acid IN LOWERCASE. Remember glutamine is gln and glutamate is glu.");
+    console.log("Please look at your chart and type the first three letters of each amino acid IN LOWERCASE. Remember glutamine is gln and glutamate is glu and AUG is start/met, IF IT HASNT SAID START PUT A SPACE.");
   }
 }
 
