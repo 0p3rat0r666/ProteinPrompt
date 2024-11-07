@@ -11,8 +11,13 @@ function RNA (){
   console.log(" | | | | | | | | | | | | | | |");
   console.log(question[0]); // change to output the bases for the question
   if(score === 4){
-    console.log("congradulations! You finished Protein Prompt!! would you like to restart?(write true or false in lowercase)");
-    let restart = prompt();
+    console.log("congradulations! You finished Protein Prompt!!");
+    const readline = require('readline').createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+    
+    let restart = readline.question('Would you like to restart?(please write true or false in lowercase)');
     if(restart === "true"){
       score = 0;
       RNA();
